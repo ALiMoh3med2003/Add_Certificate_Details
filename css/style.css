@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-color:#1A1919;
+
+  }
+  :root {
+    --primary:#BF9B30;
+    --Green:#34A853;
+    --Red:#1A1919;
+    --Grey:#D0D0D0;
+    --Black:#000000;
+    --white:#fff;
+    --overlay-bage :#1a1919f1;
+    --bg-cards:#00000040;
+    --hover:#dbb338;
+    --background-input: #ffffff1e ;
+  }
+  
+  .left-box{
+    float: left;
+    width: 10%;
+    height: 100vh;
+  }
+  .home {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../images/secondary_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+  .h2-title{
+    margin:30px 10%;
+    margin-top: 100px;
+    color: #fff;
+  }
+  .row3 {
+    width: 200px;
+    height: 2px;
+    background-color:#dbb338;
+    margin:30px 10%;
+    margin-top: -23px;
+    margin-bottom: 20px;
+    display: block;
+}
+.container-info{
+    width: 90%;
+    height:300px;  
+    position: relative;
+    float: right;
+}
+.details{
+    width: 80%;
+    margin: auto;
+}
+.info{
+    display: grid;
+    grid-template-columns:repeat(3,1fr)  ;
+}
+.label{    
+    color: #fff;
+}
+.input{
+    width: 98%;
+    height: 50px;
+    margin-bottom: 50px;
+    margin-top: 15px;
+    border-radius:7px;
+    opacity: 0.6;
+    background-color:  #8d8c8c;
+    font-size: 21px;
+    color: #000000;
+    cursor: pointer;
+}
+.input2{
+    width: 99%;
+    height: 50px;
+    margin-bottom: 25px;
+    border-radius: 7px;
+    opacity: 0.6;
+    margin-top: 15px;
+    background-color:   #8d8c8c;
+    cursor: pointer;
+    font-size: 19px;
+
+}
+.co{
+    color: #ffffff;
+}
+.option{
+    background-color:   #c7c7c7;
+    opacity: 0.2;
+    font-size: 19px;
+    color: #000000;
+}
+
+.container{
+    margin-top: 110px;
+    display: block;
+    float: right;
+    width:90% ;
+    
+}
+.title{
+    margin:15px 10%;
+    color: #fff;
+}
+#drop-container{
+    width:80% ;
+    height: 350px;
+    background-color:#1A1919;
+    margin: 0 10%;
+    border: dashed 2px #dbb338;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 40px;
+    float: right;
+
+}
+#drop-container:active{
+    border: solid 2px #dbb338;
+    cursor: pointer;
+}
+.icon{
+    font-size: 100px;
+    color:#dbb338 ;
+    cursor: pointer;
+    margin-bottom: 15px;
+    border: none;
+    display: block;
+    margin: auto;
+}
+#icon2{
+    display: none;
+    font-size: 100px;
+    color:#dbb338 ;
+    cursor: pointer;
+    margin-bottom: 15px;
+    border: none;
+}
+.drag-desc{
+    display: flex;
+    
+}
+.drag-drop h3{
+color: #fff;
+display: none;
+margin-bottom: 20px;
+font-size: 15px;
+}
+.drag-drop{
+    padding: 2%;
+    opacity: 0.8;
+    margin: auto;
+}
+.drag-desc h2 {
+    color:#fff ;
+    margin-bottom:15px ;
+    margin: auto;
+}
+.drag-drop input{
+    display: none;
+}
+.drag-desc .browse{
+    color: #dbb338;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-left: 2px;
+    font-size: 26px;
+}
+#drop-container p{
+    color:#ffffff1e ;
+    font-size: 19px;
+}
+#drop-area img{
+    max-width: 700PX;
+    max-height: 300PX;
+    background-color:#1A1919;
+    margin-top: -50px;
+    background-size: cover;
+    border-radius: 10PX;
+    cursor: pointer;
+}
+.buttons{
+    width: 90%;
+}
+.buttons label{
+    background-color: #dbb338;
+    cursor: pointer;
+}
+
+.button{
+    width: 140px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 35px;
+    background-color:  #dbb338;
+    color: #fff;
+    border-radius: 7px;
+    float: right;
+    cursor: pointer;
+
+}
+.btn-color{
+    background-color: #999999;
+    margin-bottom: 50px;
+
+}
+
+@media(max-width:567px){
+    .row3 {
+        width: 125px;
+        height: 2px;
+        background-color:#dbb338;
+        margin:30px 10%;
+        margin-top: -23px;
+        margin-bottom: 20px;
+        display: block;
+    }
+    .container-info{
+        width: 100%;
+    }
+
+    .info{
+        display: grid;
+        grid-template-columns:repeat(1,1fr)  ;
+        flex-direction: column;
+    }
+
+    .inp1{
+        width: 300px;
+
+    }
+
+    .container{
+        margin-top: 370px;
+        display: block;
+        width:100% ;
+    }
+
+
+    #drop-container{
+        width:300px ;
+        height: 300px;
+        background-color:#1A1919;
+        border: dashed 2px #dbb338;
+        border-radius: 5px;
+        margin: 0 10%;
+        float: left;
+    }
+
+
+    .button{
+        width: 300px;
+        height: 55px;
+        background-color:  #dbb338;
+        color: #fff;
+        border-radius: 7px;
+        cursor: pointer;
+        float:left ;
+        margin-left: 10%;
+    }
+
+    .btn-color{
+        background-color: #999999;
+    }
+
+}

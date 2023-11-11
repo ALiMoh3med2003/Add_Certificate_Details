@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Certificate Details</title>
+</head>
+<body>
+    <div class="left-box"></div>
+    <div class="home">
+     <div class="overlay">
+
+        <div class="container-info">
+            <h2 class="h2-title">Add Certificate Details</h2>
+            <span class="row3"></span>
+            <form class="details" >
+                <div class="info ">
+                    <div class="inp1 ">
+                        <label class="label" for="studentname">Student Name</label>
+                        <select class="input co" id="studentname">
+                            <option class="option"selected></option>
+                            <option class="option" value="1">Ahmed Abusta</option>
+                            <option class="option" value="2">ALi Mohamed</option>
+                          </select>   
+                    </div>
+
+                    <div class="inp1">
+                        <label class="label" for="date_acquired">Date Acquired</label>
+                        <input class="input" type="date" id=" date_acquired">                                 
+                    </div>
+                    <div class="inp1">
+                        <label class="label" for="upload_date">Upload Date</label>
+                        <input class="input" type="date" id="upload_date">                          
+                    </div>
+                </div>            
+                <div class="info_course ">
+                    <div class="inp1"> 
+                        <label class="label" for="course">Course Title</label>
+                          <select id=" course" class="co input2" >
+                            <option class="option"selected></option>
+                            <option class="option" value="1">Front End Development</option>
+                            <option class="option" value="2">Back End Development</option>
+                          </select>
+                    </div>
+                </div>
+            </form>
+        </div>   
+        <div class="container ">
+            <h2 class="title">Upload File</h2>
+            <div id="drop-container">
+                <div class="drag-drop">
+                      <input type="file" id="upload">
+                        <div id="drop-area">
+                            <img id=" img" > 
+                            <label for="upload"><img src="./images/upload-img.png" alt="" id="icon" class="icon"></label>
+                      <i id="icon2" class="fa-solid fa-file"></i>
+                      <h3 class="h3">This is the file</h3>                
+                        <div class="drag-desc">
+                        <h2 class="h2">Drag & drop files or <label class="browse" for="upload">Browse</label></h2>
+                        
+                      </div>
+                        <p>Supported formates JPEG, PNG, GIF, MP4, PDF, PSD, AI, Word, PPT</p>
+                </div>        
+            </div>
+            </div>
+            <div class="buttons">
+                    <button class="button " type="submit"><label for="upload">UPLOAD</label></button>
+                    <button id="reset" class="button btn-color" onclick="resetresetValue()" type="reset">CANCEL</button>
+            </div>
+     </div>
+    </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
